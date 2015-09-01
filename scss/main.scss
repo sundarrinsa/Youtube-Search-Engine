@@ -29,15 +29,9 @@ section h1{
     color: $youtubecolor;
 }
 
-
-
 form{
     margin-bottom: 40px;
 }
-
-//input{
-//   width: 570px !important;
-//}
 
 #search-btn{
     position: absolute;
@@ -56,6 +50,10 @@ form{
 #search-btn:hover{
     filter: alpha(opacity=90);
     opacity: 0.9;
+}
+
+article .thumbnail{
+    min-height: 370px !important;
 }
 
 article img{

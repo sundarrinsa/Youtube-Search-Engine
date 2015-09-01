@@ -4,97 +4,44 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    
+
 </head>
 <body>
-   <div class="jubutron">
-       <div class="Container">
-           <div class="row">
-               <h1 class="text-center">Buscador de Vídeos You<span>Tube</span></h1>
-           </div>
-       </div>
-   </div>
-   <section>
-      <h1 class="font-size-0">Buscador de Vídeos</h1>
-      <div class="container">
-          <div class="row">
-              <div class="text-center col-md-6 col-md-offset-3">
-                  <form id="search-form" name="search-form" class="form-inline" onsubmit="return search()">
-                      <div class="form-group">
+<div class="jubutron">
+    <div class="Container">
+        <div class="row">
+            <h1 class="text-center">Buscador de Vídeos You<span>Tube</span></h1>
+        </div>
+    </div>
+</div>
+<section>
+    <h1 class="font-size-0">Buscador de Vídeos</h1>
+    <div class="container">
+        <div class="row">
+            <div class="text-center col-md-6 col-md-offset-3">
+                <form id="search-form" name="search-form" class="form-inline" onsubmit="return search()">
+                    <div class="form-group">
                         <input type="search" id="query" class="form-control" placeholder="Buscar no YouTube">
-                      </div>
-                      <input type="submit" name="search-btn" id="search-btn" value="">
-                   </form>
-               </div>
-           </div>
-       </div>
-       <div class="container">
-            <div class="col-md-3">
-                <div class="panel">
-                   <article>
-                    <img src="img/felicidade.jpg" />
-                       <header>
-                           <h1>Nome do vídeo</h1>
-                       </header>
-                        
-                        <span>Por: author</span>
-                        <p>Descrição do vídeo</p>
-                    </article>
-                </div> 
+                    </div>
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </form>
             </div>
-            
-            <div class="col-md-3">
-                <div class="panel">
-                   <article>
-                    <img src="img/felicidade.jpg" />
-                        <h1>Nome do vídeo</h1>
-                        <span>Por: author</span>
-                        <p>Descrição do vídeo</p>
-                    </article>
-                </div> 
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div id="results"></div>
+                </div>
             </div>
-            
-            <div class="col-md-3">
-                <div class="panel">
-                   <article>
-                    <img src="img/felicidade.jpg" />
-                        <h1>Nome do vídeo</h1>
-                        <span>Por: author</span>
-                        <p>Descrição do vídeo</p>
-                    </article>
-                </div> 
-            </div>
-            
-            <div class="col-md-3">
-                <div class="panel">
-                   <article>
-                    <img src="img/felicidade.jpg" />
-                        <h1>Nome do vídeo</h1>
-                        <span>Por: author</span>
-                        <p>Descrição do vídeo</p>
-                    </article>
-                </div> 
-            </div>
-            
-            <div class="col-md-3">
-                <div class="panel">
-                   <article>
-                    <img src="img/felicidade.jpg" />
-                        <h1>Nome do vídeo</h1>
-                        <span>Por: author</span>
-                        <p>Descrição do vídeo</p>
-                    </article>
-                </div> 
-            </div>
-       </div>
-   </section>
-   <footer>
-       <div class="container text-center">
-           &copy; 2015 Candido Souza - Todos os direitos reservados
-       </div>
-   </footer>
-   
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script src="js/main.js"z></script>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container text-center">
+        &copy; 2015 Candido Souza - Todos os direitos reservados
+    </div>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"z></script>
 </body>
 </html>
