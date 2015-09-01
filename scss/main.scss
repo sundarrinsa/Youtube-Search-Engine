@@ -1,0 +1,67 @@
+@import 'vendor/_bootstrap.min.scss';
+
+@font-face {
+    font-family: 'youtube';
+    src:url('../fonts/Alternate_Gothic_No.2_BT.eot');
+    src:url('../fonts/Alternate_Gothic_No.2_BT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Alternate Gothic No.2 BT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$youtubecolor: #E22E28;
+
+h1{
+    font-family: 'youtube';
+    font-size: 4em;
+}
+
+h1 span{
+    color: $youtubecolor;
+}
+
+.font-size-0{
+    font-size: 0;
+}
+
+section h1{
+    font-size: 1.9em;
+    color: $youtubecolor;
+}
+
+
+
+form{
+    margin-bottom: 40px;
+}
+
+//input{
+//   width: 570px !important;
+//}
+
+#search-btn{
+    position: absolute;
+    right: 205px;
+    top: 1px;
+    height: 32px;
+    width: 32px !important;
+    border: 0;
+    cursor: pointer;
+    zoom: 1;
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+    background:transparent url(../img/search.png) top left no-repeat;
+}
+
+#search-btn:hover{
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+}
+
+article img{
+    width: 100%;
+}
+
+article h1{
+    font-size: 1.3em;
+}
