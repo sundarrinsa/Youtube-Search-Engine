@@ -60,10 +60,10 @@ function search(){
 					$('#results').append(output);
 				});
 
-				//var buttons = getButtons(prevPageToken, nextPageToken);
-                //
-				//// display buttons
-				//$('#buttons').append(buttons);
+				var buttons = getButtons(prevPageToken, nextPageToken);
+
+				// display buttons
+				$('#buttons').append(buttons);
 		});
 }
 
@@ -76,7 +76,7 @@ function getOutput(item){
 	var channelTitle = item.snippet.channelTitle;
 	var videoDate = item.snippet.publishedAt;
 
-	// Build Output String
+	// build output string
 	var output = '<div class="col-md-3">' +
 		'<div class="panel">' +
 			'<article>' +
@@ -94,4 +94,21 @@ function getOutput(item){
 		'';
 
 	return output;
+}
+
+//BUTTONS
+
+function getButtons(prevPageToken, nextPageToken){
+	if(!prevPageToken){
+		var btnoutput = '<div class="button-container">'+'<button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'"' +
+			'onclick="nextPage();">Next Page</button></div>';
+	} else {
+		var btnoutput = '<div class="button-container">'+
+			'<button id="prev-button" class="paging-button" data-token="'+prevPageToken+'" data-query="'+q+'"' +
+			'onclick="prevPage();">Prev Page</button>' +
+			'<button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'"' +
+			'onclick="nextPage();">Next Page</button></div>';
+	}
+
+	return btnoutput;
 }
